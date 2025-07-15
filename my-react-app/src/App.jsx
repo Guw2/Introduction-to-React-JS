@@ -8,7 +8,8 @@ import Student from './student/Student.jsx';
 function App() {
   return(
     <>
-      <Student name="peter" age="18" isStudent={true}></Student>
+      <Student name={"Peter"} age={18} isStudent={true}></Student>
+      <Student></Student>
       <Card />
       <Button></Button>
       <Header></Header>
