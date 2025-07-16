@@ -1,0 +1,15 @@
+.logged_title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    border: 2px solid green;
+    text-align: center;
+    width: 500px;
+}
+
+.not_logged_title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    border: 2px solid red;
+    text-align: center;
+    width: 500px;
+}
