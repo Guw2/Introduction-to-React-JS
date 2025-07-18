@@ -1,0 +1,26 @@
+.title{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: hsl(0, 0%, 99%);
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: darkgreen;
+}
+
+.list li{
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    font-size: 1.5em;
+    color: hsl(0, 0%, 25%);
+    text-align: center;
+    margin: 0;
+}
+
+.list li:hover{
+    font-size: 1.7em;
+    color: hsl(150, 50%, 50%);
+    cursor: default;
+}
