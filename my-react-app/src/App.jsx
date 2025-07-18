@@ -25,13 +25,13 @@ function App() {
 
   return(
     <>
+      <Button></Button>
       {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
       {vegetables.length > 0 ? <List items={vegetables} category="Vegetables" /> : null}
       <UserGreeting isLoggedIn={true} username={"User"}/>
       <Student name={"Peter"} age={18} isStudent={true}></Student>
       <Student></Student>
       <Card />
-      <Button></Button>
       <Header></Header>
       <Food></Food>
       <Footer></Footer>
