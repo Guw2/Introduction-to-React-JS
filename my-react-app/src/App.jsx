@@ -6,6 +6,7 @@ import Button from './button/Button.jsx';
 import Student from './student/Student.jsx';
 import UserGreeting from './UserGreeting.jsx';
 import List from './List.jsx';
+import MyComponent from './MyComponent.jsx';
 
 function App() {
   const fruits = [{id: 1, name: "Apple", price: 5.0}, 
@@ -25,6 +26,7 @@ function App() {
 
   return(
     <>
+      <MyComponent></MyComponent>
       <Button></Button>
       {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
       {vegetables.length > 0 ? <List items={vegetables} category="Vegetables" /> : null}
