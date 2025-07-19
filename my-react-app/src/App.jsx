@@ -7,6 +7,9 @@ import Student from './student/Student.jsx';
 import UserGreeting from './UserGreeting.jsx';
 import List from './List.jsx';
 import MyComponent from './MyComponent.jsx';
+import OnChangeComponent from './OnChangeComponent.jsx';
+
+import styles from './App.module.css'
 
 function App() {
   const fruits = [{id: 1, name: "Apple", price: 5.0}, 
@@ -26,17 +29,41 @@ function App() {
 
   return(
     <>
-      <MyComponent></MyComponent>
-      <Button></Button>
-      {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
-      {vegetables.length > 0 ? <List items={vegetables} category="Vegetables" /> : null}
-      <UserGreeting isLoggedIn={true} username={"User"}/>
-      <Student name={"Peter"} age={18} isStudent={true}></Student>
-      <Student></Student>
-      <Card />
-      <Header></Header>
-      <Food></Food>
-      <Footer></Footer>
+      <div>
+        <div className={styles.innerDiv}>
+          <h2>On Change</h2>
+          <OnChangeComponent />
+        </div>
+        <div className={styles.innerDiv}>
+          <h2>Use State</h2>
+          <MyComponent></MyComponent>
+        </div>
+        <div className={styles.innerDiv}>
+          <h2>Click Events</h2>
+          <Button></Button>
+        </div>
+        <div className={styles.innerDiv}>
+          <h2>Rendered Lists</h2>
+          {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
+          {vegetables.length > 0 ? <List items={vegetables} category="Vegetables" /> : null}
+        </div>
+        <div className={styles.innerDiv}>
+          <h2>Props II</h2>
+          <UserGreeting isLoggedIn={true} username={"User"}/>
+        </div>
+        <div className={styles.innerDiv}>
+          <h2>Props</h2>
+          <Student name={"Peter"} age={18} isStudent={true}></Student>
+          <Student></Student>
+        </div>
+        <div className={styles.innerDiv}>
+          <h2>Basic Basics</h2>
+          <Card />
+          <Header></Header>
+          <Food></Food>
+          <Footer></Footer>
+        </div>
+      </div>
     </>
   );
 }
