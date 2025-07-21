@@ -9,6 +9,10 @@
   display: inline-block;
 }
 
+ul{
+  list-style: none;
+}
+
 .card .cardImage{
   max-width: 60%;
   height: auto;

@@ -11,6 +11,7 @@ import OnChangeComponent from './OnChangeComponent.jsx';
 import UpdateObjectsComponent from './UpdateObjectsComponent.jsx';
 
 import styles from './App.module.css'
+import UpdateArray from './UpdateArray.jsx';
 
 function App() {
   const fruits = [{id: 1, name: "Apple", price: 5.0}, 
@@ -31,6 +32,9 @@ function App() {
   return(
     <>
       <div>
+        <div className={styles.innerDiv}>
+          <UpdateArray />
+        </div>
         <div className={styles.innerDiv}>
           <UpdateObjectsComponent />
         </div>
