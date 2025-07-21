@@ -8,6 +8,7 @@ import UserGreeting from './UserGreeting.jsx';
 import List from './List.jsx';
 import MyComponent from './MyComponent.jsx';
 import OnChangeComponent from './OnChangeComponent.jsx';
+import UpdateObjectsComponent from './UpdateObjectsComponent.jsx';
 
 import styles from './App.module.css'
 
@@ -30,6 +31,9 @@ function App() {
   return(
     <>
       <div>
+        <div className={styles.innerDiv}>
+          <UpdateObjectsComponent />
+        </div>
         <div className={styles.innerDiv}>
           <h2>On Change</h2>
           <OnChangeComponent />
