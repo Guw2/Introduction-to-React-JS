@@ -4,12 +4,16 @@ function Counter(){
 
     let [count=0, setCount] = useState();
 
-    const incrementCounter = (increment) => {
-        if(increment == true){;
-            setCount(++count);
-        }else{
-            setCount(--count);
-        }
+    const increment = () => {
+        setCount(++count);
+    }
+
+    const decrement = () => {
+        setCount(--count);
+    }
+
+    const reset = () => {
+        setCount(0);
     }
 
     return(
@@ -18,9 +22,9 @@ function Counter(){
                 <p>{count}</p>
             </div>
             <div className='counter-panel-div'>
-                <button onClick={() => incrementCounter(false)}>Decrement</button>
-                <button onClick={() => setCount(0)}>Reset</button>
-                <button onClick={() => incrementCounter(true)}>Increment</button>
+                <button onClick={decrement}>Decrement</button>
+                <button onClick={reset}>Reset</button>
+                <button onClick={increment}>Increment</button>
             </div>
         </>
     );
