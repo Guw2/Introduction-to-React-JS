@@ -1,0 +1,52 @@
+body{
+  background-image: url("https://i.imgur.com/ph2hjOe.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock-container{
+  border-radius: 50px;
+  padding: 50px;
+  transition: 1s ease;
+}
+
+.clock-container:hover{
+  backdrop-filter: blur(1.2px);
+}
+
+.clock-container:hover .clock{
+  font-size: 6.6rem;
+}
+
+.clock-container:hover .date{
+  font-size: 1.4rem;
+}
+
+.date{
+  color: rgba(255, 255, 255, 75%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: -15px;
+  font-family: monospace;
+  text-shadow: 3px 3px 5px black;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+.clock{
+  color: white;
+  font-size: 6.5rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 3px 3px 5px black;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: default;
+}
