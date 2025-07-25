@@ -14,7 +14,10 @@ import styles from './App.module.css'
 import UpdateArray from './UpdateArray.jsx';
 import UpdateArrayOfObjects from './UpdateArrayOfObjects.jsx';
 import UseEffectComponent from './UseEffectComponent.jsx';
-
+import ComponentA from './useContext/ComponentA.jsx';
+import ComponentB from './useContext/ComponentB.jsx';
+import ComponentC from './useContext/ComponentC.jsx';
+import ComponentD from './useContext/ComponentD.jsx';
 
 function App() {
   const fruits = [{id: 1, name: "Apple", price: 5.0}, 
@@ -35,6 +38,9 @@ function App() {
   return(
     <>
       <div>
+        <div className={styles.innerDiv}>
+          <ComponentA />
+        </div>
         <div className={styles.innerDiv}>
           <UseEffectComponent />
         </div>

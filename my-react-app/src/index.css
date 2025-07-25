@@ -29,3 +29,8 @@ ul{
 .card .cardText{
   font-family: arial;
 }
+
+.box{
+  border: 2px solid black;
+  padding: 10px;
+}
